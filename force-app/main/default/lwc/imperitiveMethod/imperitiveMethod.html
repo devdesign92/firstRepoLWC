@@ -1,0 +1,21 @@
+<template>
+    <lightning-card title="Imperative Methods">
+        <lightning-button variant="brand" label="Brand" title="Fetch 
+        Contact" onclick={handleClick} class="slds-m-left_medium"></lightning-button>
+<template if:true={GetCon}>
+<template for:each={GetCon} for:item="con">
+<div key={con.Id}>
+<div>
+Name: {con.Name}
+
+</div>
+
+</div>
+
+
+</template>
+
+
+</template>
+    </lightning-card>
+</template>

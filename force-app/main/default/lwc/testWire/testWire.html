@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="Wire Method with function">
+        <div>{userID}</div>
+<template if:true={UserDetails}>
+    <div> Name - {UserDetails.Name.value}
+        Email - {UserDetails.Email.value} </div>
+</template>
+    </lightning-card>
+    <lightning-card title="Wire Method with property">
+        <template if:true={UserDetailsProperty.data}>
+            <div> Name - {UserDetailsProperty.data.fields.Name.value}
+                Email - {UserDetailsProperty.data.fields.Email.value} </div>
+        </template>
+    </lightning-card>
+</template>

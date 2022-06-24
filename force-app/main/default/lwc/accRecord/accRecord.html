@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title="Get Account Record">
+        <lightning-input type="text" label="Enter some text" name="KeySearch" onchange={KeySearch}></lightning-input>  
+      
+        <template if:true={GetInfo}>
+    <template for:each={GetInfo} for:item="acc">
+<div key={acc.Id}>
+    <div><strong>{acc.Id}</strong></div>
+    <div>{acc.Name} </div>
+
+</div>
+    </template>
+
+</template>
+    </lightning-card>
+    
+</template>

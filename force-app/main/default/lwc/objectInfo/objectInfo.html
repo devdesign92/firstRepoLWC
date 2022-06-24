@@ -1,0 +1,23 @@
+<template>
+    <lightning-card title="GetObjectInfoAdapter">
+    <template if:true={myinfo.data}>
+        <div>{ myinfo.data.defaultRecordTypeId}</div>
+        <div>{myinfo.data.apiName} </div>
+    </template>
+    </lightning-card>
+    
+    <lightning-card title="Adapter Wire Method">
+        <template if:true={MyObject}>
+                 <template for:each={MyObject.results} for:item="Obj">
+                    <div key={Obj.result.apiName}> 
+                        
+                        
+                        <div>{Obj.result.apiName}</div> 
+                    <div>{Obj.result.defaultRecordTypeId}</div>
+                    </div>
+                 
+                 </template>
+                
+    
+</template>
+</lightning-card></template>
